@@ -31,8 +31,9 @@ namespace EnumTypeFun
 
             //print out enum name and value
             Console.WriteLine("{0} = {1}", emp.ToString(),(byte)emp);
-
-
+            DayOfWeek day = DayOfWeek.Monday;
+            ConsoleColor cc = ConsoleColor.Gray;
+            EvaluateEnum(day);
             Console.ReadKey();
         }
 
@@ -53,6 +54,20 @@ namespace EnumTypeFun
                     Console.WriteLine("Very GOOD, sir");
                     break;
             }
+        }
+
+        static void EvaluateEnum(System.Enum e)
+        {
+            Console.WriteLine("=> Information about {0}",e.GetType().Name);
+
+            Console.WriteLine("Underlying storage type: {0}", Enum.GetUnderlyingType(e.GetType()));
+            Array enumData = Enum.GetValues(e.GetType());
+            Console.WriteLine("This enum has {0} members",enumData.Length);
+
+            foreach(System.Enum by in enumData)
+                Console.WriteLine("the name is {0} and value is {0:d}", by);
+
+
         }
     }
 }
