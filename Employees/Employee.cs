@@ -5,15 +5,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeApp
+namespace Employees
 {
     partial class Employee
     {
-        
-        
+        class BenifitPackage
+        {
+            public enum BenifitPackageLevel
+            {
+                Standard, Gold, Platnium
+            }
+            public double ComputePayDeduction()
+            {
+                return 125.5;
+            }
+        }
+        public BenifitPackage empBenifits = new BenifitPackage();
+
+        //Properties
+        public BenifitPackage Benifits { get { return empBenifits; } set { empBenifits = value; } }
         public string Name
         {
-            //Properties
             get { return empName; }
             set
             {
@@ -27,35 +39,17 @@ namespace EmployeeApp
                 }
             }
         }
-        
-        public int Age
-        {
 
-            get { return empAge; }
-            set { empAge = value; }
-        }
-        
-        public int ID
-        {
-            get { return empID; }
-            set { empID = value; }
-        }
-        
-        public float Pay
-        {
-            get { return currPay; }
-            set { currPay = value; }
-
-        }
-        
-        public string SocialSecurityNumber
-        {
-            get { return empSNN; }
-        }
-
-        
+        public int Age { get { return empAge; } set { empAge = value; } }
+        public int ID { get { return empID; } set { empID = value; } }
+        public float Pay { get { return currPay; } set { currPay = value; } }
+        public string SocialSecurityNumber { get { return empSNN; } }
 
         //Methods
+        public double getBenifitsCost()
+        {
+            return empBenifits.ComputePayDeduction();
+        }
         public void giveBonus(float amount)
         {
             WriteLine("Giving a bonus to {0} of value {1}", empName, amount);
