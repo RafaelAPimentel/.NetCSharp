@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 6\Shapes\bin\Debug\Shapes.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 6\Shapes\obj\Debug\Shapes.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 6\Shapes\bin\Debug\Shapes.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 6\Shapes\bin\Debug\Shapes.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 6\Shapes\obj\Debug\Shapes.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 6\Shapes\obj\Debug\Shapes.pdb
