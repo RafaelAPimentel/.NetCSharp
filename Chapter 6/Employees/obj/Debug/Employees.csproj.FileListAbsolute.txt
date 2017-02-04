@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\Employees\bin\Debug\Employees.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\Employees\obj\Debug\Employees.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\Employees\bin\Debug\Employees.exe
+c:\users\guido\documents\visual studio 2015\Projects\Employees\bin\Debug\Employees.pdb
+c:\users\guido\documents\visual studio 2015\Projects\Employees\obj\Debug\Employees.exe
+c:\users\guido\documents\visual studio 2015\Projects\Employees\obj\Debug\Employees.pdb

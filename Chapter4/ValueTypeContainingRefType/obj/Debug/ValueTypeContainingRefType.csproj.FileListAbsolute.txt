@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\ValueTypeContainingRefType\bin\Debug\ValueTypeContainingRefType.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\ValueTypeContainingRefType\bin\Debug\ValueTypeContainingRefType.exe
+c:\users\guido\documents\visual studio 2015\Projects\ValueTypeContainingRefType\bin\Debug\ValueTypeContainingRefType.pdb
+c:\users\guido\documents\visual studio 2015\Projects\ValueTypeContainingRefType\obj\Debug\ValueTypeContainingRefType.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\ValueTypeContainingRefType\obj\Debug\ValueTypeContainingRefType.exe
+c:\users\guido\documents\visual studio 2015\Projects\ValueTypeContainingRefType\obj\Debug\ValueTypeContainingRefType.pdb

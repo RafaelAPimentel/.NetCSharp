@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\ObjectInitializers\bin\Debug\ObjectInitializers.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\ObjectInitializers\bin\Debug\ObjectInitializers.exe
+c:\users\guido\documents\visual studio 2015\Projects\ObjectInitializers\bin\Debug\ObjectInitializers.pdb
+c:\users\guido\documents\visual studio 2015\Projects\ObjectInitializers\obj\Debug\ObjectInitializers.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\ObjectInitializers\obj\Debug\ObjectInitializers.exe
+c:\users\guido\documents\visual studio 2015\Projects\ObjectInitializers\obj\Debug\ObjectInitializers.pdb

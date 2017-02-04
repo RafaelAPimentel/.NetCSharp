@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\EnumTypeFun\bin\Debug\EnumTypeFun.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\EnumTypeFun\bin\Debug\EnumTypeFun.exe
+c:\users\guido\documents\visual studio 2015\Projects\EnumTypeFun\bin\Debug\EnumTypeFun.pdb
+c:\users\guido\documents\visual studio 2015\Projects\EnumTypeFun\obj\Debug\EnumTypeFun.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\EnumTypeFun\obj\Debug\EnumTypeFun.exe
+c:\users\guido\documents\visual studio 2015\Projects\EnumTypeFun\obj\Debug\EnumTypeFun.pdb

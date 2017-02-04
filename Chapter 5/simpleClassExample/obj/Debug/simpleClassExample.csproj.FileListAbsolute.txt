@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\simpleClassExample\bin\Debug\simpleClassExample.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\simpleClassExample\bin\Debug\simpleClassExample.exe
+c:\users\guido\documents\visual studio 2015\Projects\simpleClassExample\bin\Debug\simpleClassExample.pdb
+c:\users\guido\documents\visual studio 2015\Projects\simpleClassExample\obj\Debug\simpleClassExample.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\simpleClassExample\obj\Debug\simpleClassExample.exe
+c:\users\guido\documents\visual studio 2015\Projects\simpleClassExample\obj\Debug\simpleClassExample.pdb

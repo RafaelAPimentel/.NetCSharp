@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\AutomaticProperties\bin\Debug\AutomaticProperties.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\AutomaticProperties\bin\Debug\AutomaticProperties.exe
+c:\users\guido\documents\visual studio 2015\Projects\AutomaticProperties\bin\Debug\AutomaticProperties.pdb
+c:\users\guido\documents\visual studio 2015\Projects\AutomaticProperties\obj\Debug\AutomaticProperties.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\AutomaticProperties\obj\Debug\AutomaticProperties.exe
+c:\users\guido\documents\visual studio 2015\Projects\AutomaticProperties\obj\Debug\AutomaticProperties.pdb

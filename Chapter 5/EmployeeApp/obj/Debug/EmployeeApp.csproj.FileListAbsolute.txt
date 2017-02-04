@@ -1,0 +1,6 @@
+c:\users\guido\documents\visual studio 2015\Projects\EmployeeApp\bin\Debug\EmployeeApp.exe.config
+c:\users\guido\documents\visual studio 2015\Projects\EmployeeApp\bin\Debug\EmployeeApp.exe
+c:\users\guido\documents\visual studio 2015\Projects\EmployeeApp\bin\Debug\EmployeeApp.pdb
+c:\users\guido\documents\visual studio 2015\Projects\EmployeeApp\obj\Debug\EmployeeApp.csprojResolveAssemblyReference.cache
+c:\users\guido\documents\visual studio 2015\Projects\EmployeeApp\obj\Debug\EmployeeApp.exe
+c:\users\guido\documents\visual studio 2015\Projects\EmployeeApp\obj\Debug\EmployeeApp.pdb
