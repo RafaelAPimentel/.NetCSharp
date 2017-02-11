@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\InterfaceHierarchy\bin\Debug\InterfaceHierarchy.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\InterfaceHierarchy\bin\Debug\InterfaceHierarchy.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\InterfaceHierarchy\bin\Debug\InterfaceHierarchy.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\InterfaceHierarchy\obj\Debug\InterfaceHierarchy.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\InterfaceHierarchy\obj\Debug\InterfaceHierarchy.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\InterfaceHierarchy\obj\Debug\InterfaceHierarchy.pdb

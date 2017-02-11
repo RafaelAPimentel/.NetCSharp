@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\IntefaceNameClash\bin\Debug\IntefaceNameClash.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\IntefaceNameClash\bin\Debug\IntefaceNameClash.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\IntefaceNameClash\bin\Debug\IntefaceNameClash.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\IntefaceNameClash\obj\Debug\IntefaceNameClash.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\IntefaceNameClash\obj\Debug\IntefaceNameClash.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\IntefaceNameClash\obj\Debug\IntefaceNameClash.pdb
