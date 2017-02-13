@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\IssuesWithNonGenericCollection\bin\Debug\IssuesWithNonGenericCollection.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\IssuesWithNonGenericCollection\bin\Debug\IssuesWithNonGenericCollection.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\IssuesWithNonGenericCollection\bin\Debug\IssuesWithNonGenericCollection.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\IssuesWithNonGenericCollection\obj\Debug\IssuesWithNonGenericCollection.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\IssuesWithNonGenericCollection\obj\Debug\IssuesWithNonGenericCollection.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\IssuesWithNonGenericCollection\obj\Debug\IssuesWithNonGenericCollection.pdb

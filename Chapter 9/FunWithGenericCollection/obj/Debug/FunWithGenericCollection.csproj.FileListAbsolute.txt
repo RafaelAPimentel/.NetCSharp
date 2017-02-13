@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithGenericCollection\bin\Debug\FunWithGenericCollection.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithGenericCollection\obj\Debug\FunWithGenericCollection.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithGenericCollection\bin\Debug\FunWithGenericCollection.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithGenericCollection\bin\Debug\FunWithGenericCollection.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithGenericCollection\obj\Debug\FunWithGenericCollection.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithGenericCollection\obj\Debug\FunWithGenericCollection.pdb
