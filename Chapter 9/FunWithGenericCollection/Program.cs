@@ -10,7 +10,8 @@ namespace FunWithGenericCollection
     {
         static void Main(string[] args)
         {
-            UseGenericList();
+            //UseGenericList();
+            UseGenericStack();
             Console.Read();
         }
 
@@ -40,6 +41,39 @@ namespace FunWithGenericCollection
 
             for (int i = 0; i < arrayOfPeople.Length; i++)
                 Console.WriteLine(arrayOfPeople[i]);
+        }
+
+        static void UseGenericStack() {
+            Stack<Person> stackOfPerson = new Stack<Person>();
+            stackOfPerson.Push(new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 });
+            stackOfPerson.Push(new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 });
+            stackOfPerson.Push(new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 });
+            stackOfPerson.Push(new Person { FirstName = "Bart", LastName = "Simpson", Age = 8 });
+            
+            //Look at the top item pop it off and look again
+            Console.WriteLine("First Person is {0}",stackOfPerson.Peek());
+            Console.WriteLine("Popped off {0}", stackOfPerson.Pop());
+            Console.WriteLine();
+            Console.WriteLine("First Person is {0}", stackOfPerson.Peek());
+            Console.WriteLine("Popped off {0}", stackOfPerson.Pop());
+            Console.WriteLine();
+            Console.WriteLine("First Person is {0}", stackOfPerson.Peek());
+            Console.WriteLine("Popped off {0}", stackOfPerson.Pop());
+            Console.WriteLine();
+            Console.WriteLine("First Person is {0}", stackOfPerson.Peek());
+            Console.WriteLine("Popped off {0}", stackOfPerson.Pop());
+
+            try
+            {
+                Console.WriteLine("First Person is {0}", stackOfPerson.Peek());
+                Console.WriteLine("Popped off {0}", stackOfPerson.Pop());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error! {0}", ex.Message);
+            }
+
+            
         }
     }
 }
