@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\GenericPoint\bin\Debug\GenericPoint.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\GenericPoint\obj\Debug\GenericPoint.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\GenericPoint\bin\Debug\GenericPoint.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\GenericPoint\bin\Debug\GenericPoint.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\GenericPoint\obj\Debug\GenericPoint.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\GenericPoint\obj\Debug\GenericPoint.pdb
