@@ -83,7 +83,7 @@ namespace FunWithGenericCollection
 
         static void GetCoffee(Person p)
         {
-            Console.WriteLine("{0} got coffee", p.FirstName);
+            Console.WriteLine("{0} went and got coffee", p.FirstName);
         }
 
         static void UseGenericQueue()
