@@ -124,7 +124,7 @@ namespace FunWithGenericCollection
                 new Person { FirstName = "Bart", LastName = "Simpson", Age = 8 },
             };
 
-            //Noe the items are sorted
+            //Now the items are sorted
             foreach (Person p in setOfPerson)
                 Console.WriteLine(p);
 
