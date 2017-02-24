@@ -83,7 +83,7 @@ namespace FunWithGenericCollection
 
         static void GetCoffee(Person p)
         {
-            Console.WriteLine("{0} got coffee", p.FirstName);
+            Console.WriteLine("{0} went and got coffee", p.FirstName);
         }
 
         static void UseGenericQueue()
@@ -124,7 +124,7 @@ namespace FunWithGenericCollection
                 new Person { FirstName = "Bart", LastName = "Simpson", Age = 8 },
             };
 
-            //Noe the items are sorted
+            //Now the items are sorted
             foreach (Person p in setOfPerson)
                 Console.WriteLine(p);
 
