@@ -23,3 +23,4 @@ namespace MIInterfaceHierarchy
 
         int GetNumberOfSides();
     }
+}
