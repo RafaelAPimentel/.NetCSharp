@@ -1,0 +1,6 @@
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\SimpleDelegate\bin\Debug\SimpleDelegate.exe.config
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\SimpleDelegate\bin\Debug\SimpleDelegate.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\SimpleDelegate\bin\Debug\SimpleDelegate.pdb
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\SimpleDelegate\obj\Debug\SimpleDelegate.csprojResolveAssemblyReference.cache
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\SimpleDelegate\obj\Debug\SimpleDelegate.exe
+C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\SimpleDelegate\obj\Debug\SimpleDelegate.pdb
