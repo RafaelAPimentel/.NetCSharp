@@ -19,12 +19,27 @@ namespace CarDelegate
             //when it wants to send us messages.
 
             c1.RegisterWithCarEngine(new Car.CarEngineHandler(OnCarEngineEvent));
-            c1.RegisterWithCarEngine(new Car.CarEngineHandler(OnCarEngineEvent2));
+
+            //Hold on to the delegate object to unregister later
+            Car.CarEngineHandler handler2 = new Car.CarEngineHandler(OnCarEngineEvent2);
+            c1.RegisterWithCarEngine(handler2);
+
 
             //speed up (this will trigger the event).
             Console.WriteLine("****** Speeding up ******");
             for (int i = 0; i < 6; i++)
+            {
                 c1.Accelerate(20);
+            }
+
+            ////unregister from the second handler
+            c1.UnRegisterWithCarEngine(handler2);
+            Console.WriteLine("****** Speeding up ******");
+            for (int i = 0; i < 6; i++)
+            {
+                c1.Accelerate(20);
+            }
+
             Console.Read();
 
         }

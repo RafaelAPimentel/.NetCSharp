@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarDelegate
+namespace CarDelegateMethodGroupConversion
 {
     class Car
     {
@@ -16,7 +16,7 @@ namespace CarDelegate
         private bool carIsDead;
 
         //class constructor
-        public Car() { }
+        public Car() { MaxSpeed = 100; }
         public Car(string name, int maxsp, int currsp)
         {
             CurrentSpeed = currsp;
@@ -50,11 +50,7 @@ namespace CarDelegate
             if (carIsDead)
             {
 
-                if (listOfHandlers != null)
-                {
-                    listOfHandlers("Sorry, this car is dead... ");
-                    
-                }
+                return;
             }
             else
             {
@@ -68,7 +64,14 @@ namespace CarDelegate
                 if (CurrentSpeed >= MaxSpeed)
                 {
                     carIsDead = true;
-                }else
+                    CurrentSpeed = 0;
+                    if (listOfHandlers != null)
+                    {
+                        listOfHandlers("Sorry, this car is dead... ");
+
+                    }
+                }
+                else
                     Console.WriteLine("CurrentSpeed = {0}", CurrentSpeed);
 
             }
