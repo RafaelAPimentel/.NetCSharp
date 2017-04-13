@@ -32,7 +32,7 @@ namespace CarDelegate
                 c1.Accelerate(20);
             }
 
-            ////unregister from the second handler
+            //unregister from the second handler
             c1.UnRegisterWithCarEngine(handler2);
             Console.WriteLine("****** Speeding up ******");
             for (int i = 0; i < 6; i++)
