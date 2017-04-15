@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegate\bin\Debug\CarDelegate.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegate\bin\Debug\CarDelegate.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegate\bin\Debug\CarDelegate.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegate\obj\Debug\CarDelegate.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegate\obj\Debug\CarDelegate.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegate\obj\Debug\CarDelegate.pdb

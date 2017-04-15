@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CloneablePoint\bin\Debug\CloneablePoint.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CloneablePoint\bin\Debug\CloneablePoint.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CloneablePoint\bin\Debug\CloneablePoint.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CloneablePoint\obj\Debug\CloneablePoint.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CloneablePoint\obj\Debug\CloneablePoint.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CloneablePoint\obj\Debug\CloneablePoint.pdb

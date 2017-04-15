@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumerator\bin\Debug\CustomEnumerator.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumerator\bin\Debug\CustomEnumerator.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumerator\bin\Debug\CustomEnumerator.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumerator\obj\Debug\CustomEnumerator.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumerator\obj\Debug\CustomEnumerator.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumerator\obj\Debug\CustomEnumerator.pdb

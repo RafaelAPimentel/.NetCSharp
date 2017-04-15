@@ -16,11 +16,10 @@ namespace AutomaticProperties
             WriteLine($"Your car name is {myCar.PetName}? That's odd...");
             myCar.DisplayStatus();
 
-            Garage g = new Garage();
+            Garage g = new Garage(myCar);
             WriteLine("numberofCars: {0}",g.NumberOfCars);
-           
+            Console.WriteLine("car name " +g.MyAuto.PetName);
             ReadKey();
-            
         }
     }
 }

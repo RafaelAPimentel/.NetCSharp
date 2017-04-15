@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using static System.Console;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace AutomaticProperties
 {
     class Garage
     {
-        public int NumberOfCars { get; set; } = 1;
+        public int NumberOfCars { get; set; } = 0;
         public Car MyAuto { get; set; } = new Car();
 
         static Garage()
@@ -18,10 +19,10 @@ namespace AutomaticProperties
         }
         public Garage() { }
 
-        public Garage(Car car, int number)
+        public Garage(Car car)
         {
             MyAuto = car;
-            NumberOfCars = number;
+            NumberOfCars++;
         }
     }
 

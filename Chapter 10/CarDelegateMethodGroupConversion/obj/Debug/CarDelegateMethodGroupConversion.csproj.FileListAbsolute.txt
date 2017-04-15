@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegateMethodGroupConversion\bin\Debug\CarDelegateMethodGroupConversion.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegateMethodGroupConversion\bin\Debug\CarDelegateMethodGroupConversion.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegateMethodGroupConversion\bin\Debug\CarDelegateMethodGroupConversion.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegateMethodGroupConversion\obj\Debug\CarDelegateMethodGroupConversion.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegateMethodGroupConversion\obj\Debug\CarDelegateMethodGroupConversion.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 10\CarDelegateMethodGroupConversion\obj\Debug\CarDelegateMethodGroupConversion.pdb

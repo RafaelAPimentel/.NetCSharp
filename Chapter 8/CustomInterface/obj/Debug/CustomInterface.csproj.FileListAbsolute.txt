@@ -1,7 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\CustomInterface\bin\Debug\CustomInterface.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomInterface\bin\Debug\CustomInterface.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomInterface\obj\Debug\CustomInterface.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomInterface\bin\Debug\CustomInterface.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomInterface\bin\Debug\CustomInterface.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomInterface\obj\Debug\CustomInterface.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomInterface\obj\Debug\CustomInterface.pdb

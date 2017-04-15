@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithObservableCollection\bin\Debug\FunWithObservableCollection.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithObservableCollection\obj\Debug\FunWithObservableCollection.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithObservableCollection\bin\Debug\FunWithObservableCollection.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithObservableCollection\bin\Debug\FunWithObservableCollection.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithObservableCollection\obj\Debug\FunWithObservableCollection.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 9\FunWithObservableCollection\obj\Debug\FunWithObservableCollection.pdb
