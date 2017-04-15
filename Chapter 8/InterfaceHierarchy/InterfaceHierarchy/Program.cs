@@ -21,6 +21,7 @@ namespace InterfaceHierarchy
 
             //CAlling from IAdvancedDraw Explicitly
             IAdvancedDraw iAdvDraw = myBitImage as IAdvancedDraw;
+
             if (iAdvDraw != null)
                 iAdvDraw.DrawUpsideDown();
 
