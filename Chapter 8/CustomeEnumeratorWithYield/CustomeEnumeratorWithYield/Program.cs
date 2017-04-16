@@ -19,7 +19,7 @@ namespace CustomeEnumeratorWithYield
 
             Console.WriteLine();
 
-            //Get items (in reverse) using nameed iterator
+            //Get items (in reverse) using named iterator
             foreach(Car c in carLot.GetTheCars(true))
                 Console.WriteLine($"{c.PetName} is going {c.CurrentSpeed} MPH");
 
