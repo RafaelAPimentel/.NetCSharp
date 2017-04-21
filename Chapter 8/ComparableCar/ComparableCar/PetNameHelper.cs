@@ -9,7 +9,6 @@ namespace ComparableCar
 {
     class PetNameHelper : IComparer
     {
-
         int IComparer.Compare(object obj1, object obj2) {
 
             Car t1 = obj1 as Car;

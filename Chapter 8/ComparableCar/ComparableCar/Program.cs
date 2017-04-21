@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,11 @@ namespace ComparableCar
                 Console.WriteLine($"{c.CarID } : { c.PetName}");
 
             Array.Sort(myAutos, Car.SortByPetName);
+            Console.WriteLine();
+            foreach (Car c in myAutos)
+            {
+                Console.WriteLine($"{c.CarID} : {c.PetName }");
+            }
             Console.ReadKey();
         }
     }
