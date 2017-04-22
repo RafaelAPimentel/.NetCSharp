@@ -1,6 +1,0 @@
-c:\users\guido\documents\visual studio 2015\Projects\StaticDataAndMembers\bin\Debug\StaticDataAndMembers.exe.config
-c:\users\guido\documents\visual studio 2015\Projects\StaticDataAndMembers\bin\Debug\StaticDataAndMembers.exe
-c:\users\guido\documents\visual studio 2015\Projects\StaticDataAndMembers\bin\Debug\StaticDataAndMembers.pdb
-c:\users\guido\documents\visual studio 2015\Projects\StaticDataAndMembers\obj\Debug\StaticDataAndMembers.csprojResolveAssemblyReference.cache
-c:\users\guido\documents\visual studio 2015\Projects\StaticDataAndMembers\obj\Debug\StaticDataAndMembers.exe
-c:\users\guido\documents\visual studio 2015\Projects\StaticDataAndMembers\obj\Debug\StaticDataAndMembers.pdb

@@ -1,5 +1,0 @@
-c:\users\guido\documents\visual studio 2015\Projects\MultidimensionalArrays\bin\Debug\MultidimensionalArrays.exe.config
-c:\users\guido\documents\visual studio 2015\Projects\MultidimensionalArrays\bin\Debug\MultidimensionalArrays.exe
-c:\users\guido\documents\visual studio 2015\Projects\MultidimensionalArrays\bin\Debug\MultidimensionalArrays.pdb
-c:\users\guido\documents\visual studio 2015\Projects\MultidimensionalArrays\obj\Debug\MultidimensionalArrays.exe
-c:\users\guido\documents\visual studio 2015\Projects\MultidimensionalArrays\obj\Debug\MultidimensionalArrays.pdb
