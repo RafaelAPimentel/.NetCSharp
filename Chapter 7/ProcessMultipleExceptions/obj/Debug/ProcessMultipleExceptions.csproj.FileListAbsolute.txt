@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\ProcessMultipleExceptions\bin\Debug\ProcessMultipleExceptions.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\ProcessMultipleExceptions\bin\Debug\ProcessMultipleExceptions.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\ProcessMultipleExceptions\bin\Debug\ProcessMultipleExceptions.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\ProcessMultipleExceptions\obj\Debug\ProcessMultipleExceptions.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\ProcessMultipleExceptions\obj\Debug\ProcessMultipleExceptions.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 7\ProcessMultipleExceptions\obj\Debug\ProcessMultipleExceptions.csprojResolveAssemblyReference.cache

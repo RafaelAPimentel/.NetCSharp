@@ -1,6 +1,0 @@
-c:\users\guido\documents\visual studio 2015\Projects\FunWithStructures\bin\Debug\FunWithStructures.exe.config
-c:\users\guido\documents\visual studio 2015\Projects\FunWithStructures\bin\Debug\FunWithStructures.exe
-c:\users\guido\documents\visual studio 2015\Projects\FunWithStructures\bin\Debug\FunWithStructures.pdb
-c:\users\guido\documents\visual studio 2015\Projects\FunWithStructures\obj\Debug\FunWithStructures.csprojResolveAssemblyReference.cache
-c:\users\guido\documents\visual studio 2015\Projects\FunWithStructures\obj\Debug\FunWithStructures.exe
-c:\users\guido\documents\visual studio 2015\Projects\FunWithStructures\obj\Debug\FunWithStructures.pdb
