@@ -1,3 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\IntefaceNameClash\bin\Debug\IntefaceNameClash.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\IntefaceNameClash\obj\Debug\IntefaceNameClash.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\IntefaceNameClash\obj\Debug\IntefaceNameClash.pdb

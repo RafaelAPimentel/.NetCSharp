@@ -1,6 +1,0 @@
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumeratorWithYield\bin\Debug\CustomEnumeratorWithYield.exe.config
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumeratorWithYield\bin\Debug\CustomEnumeratorWithYield.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumeratorWithYield\bin\Debug\CustomEnumeratorWithYield.pdb
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumeratorWithYield\obj\Debug\CustomEnumeratorWithYield.csprojResolveAssemblyReference.cache
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumeratorWithYield\obj\Debug\CustomEnumeratorWithYield.exe
-C:\Users\Guido\Documents\Visual Studio 2015\Projects\Chapter 8\CustomEnumeratorWithYield\obj\Debug\CustomEnumeratorWithYield.pdb
