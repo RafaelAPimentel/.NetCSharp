@@ -77,7 +77,7 @@ namespace ComparableCar
                 return string.Compare(obj1.PetName, obj2.PetName);
             }
             else {
-                throw new ArgumentException("This isnt a Car");
+                throw new ArgumentException("This isnt a  Damn Car");
             }
         }
     }
