@@ -11,7 +11,30 @@ namespace IssuesWithNonGenericCollections
     {
         static void Main(string[] args)
         {
-            WorkWithArrayList();
+            Console.WriteLine("**** Custom Person Collection ****\n");
+            PersonCollection myPeople = new PersonCollection();
+            myPeople.AddPerson(new Person("Homer", "Simpson", 40));
+            myPeople.AddPerson(new Person("Marge", "Simpson", 38));
+            myPeople.AddPerson(new Person("Lisa", "Simpson", 9));
+            myPeople.AddPerson(new Person("Bart", "Simpson", 7));
+            myPeople.AddPerson(new Person("Maggie", "Simpson", 2));
+
+            foreach (Person  p  in myPeople)
+            {
+                Console.WriteLine(p);
+            }
+            Console.WriteLine();
+            Console.WriteLine("**** Fun wih Generics ****\n");
+            List<Person> morePeople = new List<Person>();
+            morePeople.Add(new Person("Frank", "Black", 50));
+            Console.WriteLine(morePeople[0]);
+
+            //This list can only hold integers
+            List<int> moreInts = new List<int>();
+            moreInts.Add(10);
+            moreInts.Add(20);
+            int sum = moreInts[0] + moreInts[1];
+            Console.WriteLine($"sum: {sum}");
             Console.ReadKey();
         }
 
@@ -43,6 +66,16 @@ namespace IssuesWithNonGenericCollections
 
             //Now it is reboxed, as WriteLine() requires object type!
             Console.WriteLine($"Value of your int: {i}");
+        }
+
+        static void ArrayListOfRandomObjects() {
+            //The arrayList can hold anything at all
+            ArrayList allMyObjects = new ArrayList();
+            allMyObjects.Add(true);
+            allMyObjects.Add(new OperatingSystem(PlatformID.MacOSX, new Version(10, 0)));
+            allMyObjects.Add(66);
+            allMyObjects.Add(3.14);
+
         }
     }
 }
