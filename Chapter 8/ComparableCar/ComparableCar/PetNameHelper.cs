@@ -17,7 +17,7 @@ namespace ComparableCar
             if (t1 != null && t2 != null)
                 return string.Compare(t1.PetName, t2.PetName);
             else
-                throw new ArgumentException("PArameter is not a car");
+                throw new ArgumentException("Parameter is not a car");
 
         }
     }
