@@ -137,7 +137,7 @@ namespace FunWithGenericCollections
                 Console.WriteLine(p);
         }
 
-        static void UseDictionoary()
+        static void UseGenericDictionoary()
         {
 
             //Populate using Add() method
@@ -159,7 +159,19 @@ namespace FunWithGenericCollections
             };
 
             //Get Lisa
-            Person Lisa = peopleB["Lisa"];
+            Person Marge = peopleB["Marge"];
+            Console.WriteLine(Marge);
+
+            //Populate using dictionary initialization
+            Dictionary<string, Person> peopleC = new Dictionary<string, Person>()
+            {
+                ["Homer"] = new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 },
+                ["Marge"] = new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 },
+                ["Lisa"] = new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 }
+
+            };
+
+            Person Lisa = peopleC["Lisa"];
             Console.WriteLine(Lisa);
         }
     }
