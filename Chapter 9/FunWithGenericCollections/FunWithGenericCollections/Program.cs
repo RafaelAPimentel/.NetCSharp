@@ -13,7 +13,8 @@ namespace FunWithGenericCollections
             //UseGenericList();
             //GenericStack();
             //UseGenericQueue();
-            UseSortedSet();
+            //UseSortedSet();
+            UseDictionoary();
             Console.ReadKey();
         }
 
@@ -134,6 +135,32 @@ namespace FunWithGenericCollections
             Console.WriteLine("\nStill sorted");
             foreach (Person p in setOfPeople)
                 Console.WriteLine(p);
+        }
+
+        static void UseDictionoary()
+        {
+
+            //Populate using Add() method
+            Dictionary<string, Person> peopleA = new Dictionary<string, Person>();
+            peopleA.Add("Homer",new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 });
+            peopleA.Add("Marge", new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 });
+            peopleA.Add("Lisa", new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 });
+
+            //get Homer
+            Person Homer = peopleA["Homer"];
+            Console.WriteLine(Homer);
+
+            //Populate with initialization syntax
+            Dictionary<string, Person> peopleB = new Dictionary<string, Person>()
+            {
+                {"Homer", new Person{ FirstName= "Homer", LastName="Simpson",Age=47} },
+                { "Marge", new Person{FirstName="Marge",LastName="Simpson",Age=45 } },
+                { "Lisa", new Person{ FirstName="Lisa",LastName="Simpson",Age=9} }
+            };
+
+            //Get Lisa
+            Person Lisa = peopleB["Lisa"];
+            Console.WriteLine(Lisa);
         }
     }
 
