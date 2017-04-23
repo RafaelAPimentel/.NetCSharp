@@ -12,7 +12,8 @@ namespace FunWithGenericCollections
         {
             //UseGenericList();
             //GenericStack();
-            UseGenericQueue();
+            //UseGenericQueue();
+            UseSortedSet();
             Console.ReadKey();
         }
 
@@ -110,6 +111,31 @@ namespace FunWithGenericCollections
         {
             Console.WriteLine($"{p.FirstName} is next to get coffee");
         }
+        static void UseSortedSet()
+        {
+            //Makes some people with different ages.
+            SortedSet<Person> setOfPeople = new SortedSet<Person>(new SortPeopleByAge()) {
+        new Person{FirstName="Homer",LastName="Simpson",Age=47 },
+        new Person{FirstName="Marge",LastName="Simpson",Age=45 },
+        new Person{FirstName="Lisa",LastName="Simpson",Age=9 },
+        new Person{FirstName="Bart",LastName="Simpson",Age=8 }
+            };
+
+            //Note the items are sorted by age
+            Console.WriteLine("**** Fun with Generic Collection ****");
+            foreach (Person p in setOfPeople)
+                Console.WriteLine(p);
+
+            //add a few people
+            setOfPeople.Add(new Person { FirstName = "Saku", LastName = "Jones", Age = 1 });
+            setOfPeople.Add(new Person { FirstName = "Miku", LastName = "Jones", Age = 32 });
+
+            //still sorted
+            Console.WriteLine("\nStill sorted");
+            foreach (Person p in setOfPeople)
+                Console.WriteLine(p);
+        }
     }
+
 }
 
