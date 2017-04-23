@@ -14,7 +14,7 @@ namespace FunWithGenericCollections
             //GenericStack();
             //UseGenericQueue();
             //UseSortedSet();
-            UseDictionoary();
+            UseGenericDictionoary();
             Console.ReadKey();
         }
 
