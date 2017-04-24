@@ -1,5 +1,0 @@
-c:\users\guido\documents\visual studio 2015\Projects\FunWithArrays\bin\Debug\FunWithArrays.exe.config
-c:\users\guido\documents\visual studio 2015\Projects\FunWithArrays\bin\Debug\FunWithArrays.exe
-c:\users\guido\documents\visual studio 2015\Projects\FunWithArrays\bin\Debug\FunWithArrays.pdb
-c:\users\guido\documents\visual studio 2015\Projects\FunWithArrays\obj\Debug\FunWithArrays.exe
-c:\users\guido\documents\visual studio 2015\Projects\FunWithArrays\obj\Debug\FunWithArrays.pdb

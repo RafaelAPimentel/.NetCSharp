@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace ComparableCar
 {
-    class Car : IComparable
+    class Car : IComparable, IComparer
     {
         public const int MaxSpeed = 100;
 
         public int CarID { get; set; }
         public int CurrentSpeed { get; set; } = 0;
         public string PetName { get; set; } = "";
-        public static IComparer SortByPetName { get { return (IComparer)new PetNameHelper(); } }
+        public static IComparer SortByPetName { get { return (IComparer)new Car(); } }
 
         private bool carIsDead;
 
@@ -66,6 +66,19 @@ namespace ComparableCar
             else
                 throw new ArgumentException("Parameter is not a Car!");
 
+        }
+
+        int IComparer.Compare(object x, object y) {
+            Car obj1 = x as Car;
+            Car obj2 = y as Car;
+
+            if (obj1 != null && obj2 != null)
+            {
+                return string.Compare(obj1.PetName, obj2.PetName);
+            }
+            else {
+                throw new ArgumentException("This isnt a  Damn Car");
+            }
         }
     }
 }
