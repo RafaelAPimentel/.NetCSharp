@@ -1,6 +1,0 @@
-c:\users\guido\documents\visual studio 2015\Projects\BasicInheritance\bin\Debug\BasicInheritance.exe.config
-c:\users\guido\documents\visual studio 2015\Projects\BasicInheritance\bin\Debug\BasicInheritance.exe
-c:\users\guido\documents\visual studio 2015\Projects\BasicInheritance\bin\Debug\BasicInheritance.pdb
-c:\users\guido\documents\visual studio 2015\Projects\BasicInheritance\obj\Debug\BasicInheritance.csprojResolveAssemblyReference.cache
-c:\users\guido\documents\visual studio 2015\Projects\BasicInheritance\obj\Debug\BasicInheritance.exe
-c:\users\guido\documents\visual studio 2015\Projects\BasicInheritance\obj\Debug\BasicInheritance.pdb

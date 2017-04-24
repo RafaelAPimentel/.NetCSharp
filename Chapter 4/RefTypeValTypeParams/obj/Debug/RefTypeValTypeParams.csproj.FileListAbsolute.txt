@@ -1,6 +1,0 @@
-c:\users\guido\documents\visual studio 2015\Projects\RefTypeValTypeParams\bin\Debug\RefTypeValTypeParams.exe.config
-c:\users\guido\documents\visual studio 2015\Projects\RefTypeValTypeParams\bin\Debug\RefTypeValTypeParams.exe
-c:\users\guido\documents\visual studio 2015\Projects\RefTypeValTypeParams\bin\Debug\RefTypeValTypeParams.pdb
-c:\users\guido\documents\visual studio 2015\Projects\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.csprojResolveAssemblyReference.cache
-c:\users\guido\documents\visual studio 2015\Projects\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.exe
-c:\users\guido\documents\visual studio 2015\Projects\RefTypeValTypeParams\obj\Debug\RefTypeValTypeParams.pdb
