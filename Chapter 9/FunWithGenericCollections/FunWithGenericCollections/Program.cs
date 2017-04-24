@@ -13,7 +13,8 @@ namespace FunWithGenericCollections
             //UseGenericList();
             //GenericStack();
             //UseGenericQueue();
-            UseSortedSet();
+            //UseSortedSet();
+            UseGenericDictionoary();
             Console.ReadKey();
         }
 
@@ -134,6 +135,44 @@ namespace FunWithGenericCollections
             Console.WriteLine("\nStill sorted");
             foreach (Person p in setOfPeople)
                 Console.WriteLine(p);
+        }
+
+        static void UseGenericDictionoary()
+        {
+
+            //Populate using Add() method
+            Dictionary<string, Person> peopleA = new Dictionary<string, Person>();
+            peopleA.Add("Homer",new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 });
+            peopleA.Add("Marge", new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 });
+            peopleA.Add("Lisa", new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 });
+
+            //get Homer
+            Person Homer = peopleA["Homer"];
+            Console.WriteLine(Homer);
+
+            //Populate with initialization syntax
+            Dictionary<string, Person> peopleB = new Dictionary<string, Person>()
+            {
+                {"Homer", new Person{ FirstName= "Homer", LastName="Simpson",Age=47} },
+                { "Marge", new Person{FirstName="Marge",LastName="Simpson",Age=45 } },
+                { "Lisa", new Person{ FirstName="Lisa",LastName="Simpson",Age=9} }
+            };
+
+            //Get Lisa
+            Person Marge = peopleB["Marge"];
+            Console.WriteLine(Marge);
+
+            //Populate using dictionary initialization
+            Dictionary<string, Person> peopleC = new Dictionary<string, Person>()
+            {
+                ["Homer"] = new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 },
+                ["Marge"] = new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 },
+                ["Lisa"] = new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 }
+
+            };
+
+            Person Lisa = peopleC["Lisa"];
+            Console.WriteLine(Lisa);
         }
     }
 
