@@ -21,7 +21,8 @@ namespace FunWithObservableCollection
 
             people.Add(new Person("Frank", "Bomb", 45));
             people.Add(new Person("Bill", "Nye", 10));
-            people.Remove(people[2]);
+            //First use of Lambda :) 
+            people.Remove(people.ToList().Find(x => x.FirstName == "Bill"));
 
             List<Person> listOfPeople = people.ToList();
             foreach (Person item in listOfPeople)
