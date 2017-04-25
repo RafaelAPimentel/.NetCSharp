@@ -1,6 +1,0 @@
-C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\FunWithObservableCollection\FunWithObservableCollection\bin\Debug\FunWithObservableCollection.exe.config
-C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\FunWithObservableCollection\FunWithObservableCollection\bin\Debug\FunWithObservableCollection.exe
-C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\FunWithObservableCollection\FunWithObservableCollection\bin\Debug\FunWithObservableCollection.pdb
-C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\FunWithObservableCollection\FunWithObservableCollection\obj\Debug\FunWithObservableCollection.exe
-C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\FunWithObservableCollection\FunWithObservableCollection\obj\Debug\FunWithObservableCollection.pdb
-C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\FunWithObservableCollection\FunWithObservableCollection\obj\Debug\FunWithObservableCollection.csprojResolveAssemblyReference.cache
