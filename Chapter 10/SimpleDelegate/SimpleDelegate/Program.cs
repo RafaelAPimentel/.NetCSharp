@@ -34,6 +34,7 @@ namespace SimpleDelegate
                 Console.WriteLine($"Method Name: {item.Method}");
                 Console.WriteLine($"Type Name: {item.Target}");
             }
+            
         }
     }
 }
