@@ -18,6 +18,8 @@ namespace IssuesWithNonGenericCollections
             myPeople.AddPerson(new Person("Lisa", "Simpson", 9));
             myPeople.AddPerson(new Person("Bart", "Simpson", 7));
             myPeople.AddPerson(new Person("Maggie", "Simpson", 2));
+            myPeople.AddPerson(new Person("Rafael","Pimentel", 20));
+            
 
             foreach (Person  p  in myPeople)
             {

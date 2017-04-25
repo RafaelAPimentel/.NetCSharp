@@ -21,6 +21,7 @@ namespace IssuesWithNonGenericCollections
 
         }
 
+
         public void ClearPeople() {
             arPeople.Clear();
         }
