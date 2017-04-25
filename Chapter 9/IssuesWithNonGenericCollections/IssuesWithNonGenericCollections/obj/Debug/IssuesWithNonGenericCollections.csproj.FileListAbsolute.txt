@@ -1,0 +1,6 @@
+C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\IssuesWithNonGenericCollections\IssuesWithNonGenericCollections\bin\Debug\IssuesWithNonGenericCollections.exe.config
+C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\IssuesWithNonGenericCollections\IssuesWithNonGenericCollections\bin\Debug\IssuesWithNonGenericCollections.exe
+C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\IssuesWithNonGenericCollections\IssuesWithNonGenericCollections\bin\Debug\IssuesWithNonGenericCollections.pdb
+C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\IssuesWithNonGenericCollections\IssuesWithNonGenericCollections\obj\Debug\IssuesWithNonGenericCollections.csprojResolveAssemblyReference.cache
+C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\IssuesWithNonGenericCollections\IssuesWithNonGenericCollections\obj\Debug\IssuesWithNonGenericCollections.exe
+C:\Users\rafael.pimentel\Source\Repos\.NetCsharp\Chapter 9\IssuesWithNonGenericCollections\IssuesWithNonGenericCollections\obj\Debug\IssuesWithNonGenericCollections.pdb
