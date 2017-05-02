@@ -30,6 +30,7 @@ namespace FunWithObservableCollection
                 Console.WriteLine(item.ToString());
             }
 
+            Console.WriteLine(Enumerable.Range(0, 9).ToList());
             Console.ReadKey();
         }
 
