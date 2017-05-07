@@ -24,10 +24,10 @@ namespace CarEvent
 
         //Class constructor
         public Car() { }
-        public Car(string name, int maxsd, int currsp)
+        public Car(string name, int maxsp, int currsp)
         {
             PetName = name;
-            MaxSpeed = maxsd;
+            MaxSpeed = maxsp;
             currentSpeed = currsp;
         }
 
@@ -54,5 +54,8 @@ namespace CarEvent
                     Console.WriteLine($"CurrentSpeed: {currentSpeed}");
             }
         }
+        
+        public int Add(int x,int y ) => x+y;
+        public void PrintSum(int x,int y) => Console.WriteLine($"Sum of the passed two integers {x+y}");
     }
 }
