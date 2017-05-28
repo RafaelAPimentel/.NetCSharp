@@ -7,6 +7,12 @@ using System.Windows.Forms;
 
 namespace CarLibrary
 {
+    public enum MusicMedia {
+        musicCD,
+        musicTape,
+        musicRadio,
+        musicMp3
+    }
     public class SportsCar : Car
     {
         public SportsCar() { }
