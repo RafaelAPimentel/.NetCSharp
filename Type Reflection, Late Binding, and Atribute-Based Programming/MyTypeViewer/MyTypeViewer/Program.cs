@@ -86,7 +86,7 @@ namespace MyTypeViewer
         }
         static void ListVariousStats(Type t) {
             Console.WriteLine("**** Various Statistics ****");
-            Console.WriteLine($"Base lcass is {t.BaseType}");
+            Console.WriteLine($"Base class is {t.BaseType}");
             Console.WriteLine($"Is type abstract? {t.IsAbstract}");
             Console.WriteLine($"Is type sealed? {t.IsSealed}");
             Console.WriteLine($"Is Generic? {t.IsGenericTypeDefinition}");
