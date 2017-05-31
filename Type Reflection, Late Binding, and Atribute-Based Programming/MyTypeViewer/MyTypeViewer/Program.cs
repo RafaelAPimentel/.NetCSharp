@@ -21,7 +21,7 @@ namespace MyTypeViewer
 
                 typeName = Console.ReadLine();
 
-                if (typeName.ToUpper() =="Q")
+                if (typeName.ToUpper() == "Q")
                 {
                     break;
                 }
@@ -45,8 +45,10 @@ namespace MyTypeViewer
             }
             while (true);
 
-    }
-        static void ListMethods(Type t) {
+        }
+        
+        static void ListMethods(Type t)
+        {
             Console.WriteLine("**** Methods ****");
             var MethodNames = from n in t.GetMethods() select n;
             foreach (var name in MethodNames)
@@ -57,7 +59,8 @@ namespace MyTypeViewer
             Console.WriteLine();
         }
 
-        static void ListFields(Type t) {
+        static void ListFields(Type t)
+        {
             Console.WriteLine("**** Fields ****");
             var fieldNames = from f in t.GetFields() select f.Name;
             foreach (var item in fieldNames)
@@ -67,7 +70,8 @@ namespace MyTypeViewer
             Console.WriteLine();
         }
 
-        static void ListProp(Type t) {
+        static void ListProp(Type t)
+        {
             Console.WriteLine("**** Properties ****");
             var propNames = from p in t.GetProperties() select p.Name;
             foreach (var item in propNames)
@@ -76,7 +80,9 @@ namespace MyTypeViewer
             }
             Console.WriteLine();
         }
-        static void ListInterfaces(Type t) {
+
+        static void ListInterfaces(Type t)
+        {
             Console.WriteLine("**** Interfaces ****");
             var ifaces = from i in t.GetInterfaces() select i.Name;
             foreach (var item in ifaces)
@@ -84,7 +90,9 @@ namespace MyTypeViewer
                 Console.WriteLine($"->{item}");
             }
         }
-        static void ListVariousStats(Type t) {
+
+        static void ListVariousStats(Type t)
+        {
             Console.WriteLine("**** Various Statistics ****");
             Console.WriteLine($"Base class is {t.BaseType}");
             Console.WriteLine($"Is type abstract? {t.IsAbstract}");

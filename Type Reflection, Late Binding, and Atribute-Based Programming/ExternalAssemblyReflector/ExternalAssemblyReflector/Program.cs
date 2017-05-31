@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ExternalAssemblyReflector
 {
     class Program
@@ -25,6 +26,7 @@ namespace ExternalAssemblyReflector
 
             string asmName = "";
             Assembly asm = null;
+            
 
             do
             {
