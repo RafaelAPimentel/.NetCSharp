@@ -13,6 +13,7 @@ namespace DynamicKeyword
             DynamicClass();
             Console.Read();
         }
+
         static void DynamicClass() {
             VeryDynamicClass dyClass = new VeryDynamicClass();
             Console.WriteLine(dyClass.DynamicMethod(10));
