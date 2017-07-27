@@ -51,10 +51,7 @@ namespace CarDelegateMethodGroupCoversion
             //if car is "dead" send dead message
             if (IsCarDead)
             {
-                if (listOfHandler != null)
-                {
-                    listOfHandler("Sorry, Car is dead!");
-                }
+                listOfHandler?.Invoke("Sorry, Car is dead!");
 
             }
             else {

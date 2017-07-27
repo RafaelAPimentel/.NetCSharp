@@ -35,9 +35,6 @@ namespace SimpleLambdaExpressions
 
             foreach (var evenNumber in evenNumbers)
                 Console.Write($"{evenNumber} \t");
-
-            
-          
         }
 
         private static void AnonymousMethodSyntax()
