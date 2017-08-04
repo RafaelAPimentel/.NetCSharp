@@ -27,9 +27,6 @@ namespace MultiThreadedPrinting
             foreach (Thread t in threads)
                 t.Start();
             Console.Read();
-            {
-
-            }
         }
     }
 }
