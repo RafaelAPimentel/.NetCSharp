@@ -78,7 +78,7 @@ namespace AutoLotDAL.ConnectedLayer
                 }
                 catch (Exception ex)
                 {
-                    Exception error = new Exception("Sorry couldnt look up petname!",ex);
+                    Exception error = new Exception("Sorry couldnt look up petname!", ex);
                     throw error;
                 }
             }
@@ -167,7 +167,60 @@ namespace AutoLotDAL.ConnectedLayer
             return dataTable;
         }
 
+        //a new member of the InventoryDAL class
+        public void ProcessCreditRisk(bool throwEx, int custID)
+        {
+            //first look up current name based on customer ID
+            string fname;
+            string lname;
+            var cmdSelect = new SqlCommand($"SELECT * FROM Customers where CustId = {custID}", _sqlconnection);
+            using (var dataReader = cmdSelect.ExecuteReader())
+            {
+                if (dataReader.HasRows)
+                {
+                    dataReader.Read();
+                    fname = (string)dataReader["FirstName"];
+                    lname = (string)dataReader["LastName"];
+                }
+                else
+                {
+                    return;
+                }
+            }
 
+            //Create command objects that represent each step of the operation
+            var cmdRemove = new SqlCommand($"DELETE FROM Orders wHERE CustId = {custID};DELETE FROM Customers WHERE CustId ={custID};", _sqlconnection);
+            
+            var cmdInsert = new SqlCommand($"INSERT INTO CreditRisks (FirstName,LastName) VALUES ('{fname}','{lname}')", _sqlconnection);
 
+            //We will get this from the connection object
+            SqlTransaction tx = null;
+            try
+            {
+                tx = _sqlconnection.BeginTransaction();
+
+                //enlist the commands into this transaction
+                cmdInsert.Transaction = tx;
+                cmdRemove.Transaction = tx;
+
+                //execute the commands
+                cmdInsert.ExecuteNonQuery();
+                cmdRemove.ExecuteNonQuery();
+
+                //simulate error
+                if (throwEx)
+                {
+                    throw new Exception("Sorry! Database error! Tx failed...");
+                }
+                tx.Commit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                //any error will roll back transaction
+                //using the new conditional access operator to check for null
+                tx?.Rollback();
+            }
+        }
     }
 }
