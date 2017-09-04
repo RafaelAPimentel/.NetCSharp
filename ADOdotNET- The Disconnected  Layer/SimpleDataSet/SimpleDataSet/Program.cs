@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Data;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
@@ -14,8 +16,7 @@ namespace SimpleDataSet
     {
         static void Main(string[] args)
         {
-            WriteLine("**** Fun with DataSets ****\n")
-                ;
+            WriteLine("**** Fun with DataSets ****\n");
             //Create the DataSet object and add few properties
             var carsInventoryDS = new DataSet("Car Inventory");
 
@@ -25,6 +26,8 @@ namespace SimpleDataSet
 
             FillDataSet(carsInventoryDS);
             PrintDataSet(carsInventoryDS);
+            SaveAndLoadAsXml(carsInventoryDS);
+            SaveAndLoadAsBinary(carsInventoryDS);
             ReadLine();
         }
 
@@ -49,15 +52,17 @@ namespace SimpleDataSet
                 }
                 WriteLine("\n------------------------------------");
 
+                PrintTable(dt);
+
                 //Print the datatable
-                for (int curRow = 0; curRow < dt.Rows.Count; curRow++)
-                {
-                    for (int curCol = 0; curCol < dt.Columns.Count; curCol++)
-                    {
-                        Write($"{dt.Rows[curRow][curCol]}\t");
-                    }
-                    WriteLine();
-                }
+                //for (int curRow = 0; curRow < dt.Rows.Count; curRow++)
+                //{
+                //    for (int curCol = 0; curCol < dt.Columns.Count; curCol++)
+                //    {
+                //        Write($"{dt.Rows[curRow][curCol]}\t");
+                //    }
+                WriteLine();
+                //}
             }
         }
 
@@ -66,7 +71,8 @@ namespace SimpleDataSet
             //create data columns that map to the 
             //"real" columns in the inventory table
             //of the AutoLot database
-            var carIDColumn = new DataColumn("CarID", typeof(int)) {
+            var carIDColumn = new DataColumn("CarID", typeof(int))
+            {
                 Caption = "Car ID",
                 ReadOnly = true,
                 AllowDBNull = false,
@@ -78,12 +84,13 @@ namespace SimpleDataSet
 
             var carMakeColumn = new DataColumn("Make", typeof(string));
             var carColorColumn = new DataColumn("Color", typeof(string));
-            var carPetNameColumn = new DataColumn("PetName", typeof(string)) {
+            var carPetNameColumn = new DataColumn("PetName", typeof(string))
+            {
                 Caption = "Pet Name"
             };
             //Now add datacolumn to a datatable
             var inventoryTable = new DataTable("Inventory");
-            inventoryTable.Columns.AddRange(new[] { carIDColumn,carMakeColumn,carColorColumn,carPetNameColumn});
+            inventoryTable.Columns.AddRange(new[] { carIDColumn, carMakeColumn, carColorColumn, carPetNameColumn });
 
             //Now add some rows to the Inventory Table
             DataRow carRow = inventoryTable.NewRow();
@@ -107,7 +114,9 @@ namespace SimpleDataSet
             //finally add our table to the DataSet
             ds.Tables.Add(inventoryTable);
         }
-        private static void ManipulateDataRowState() {
+
+        private static void ManipulateDataRowState()
+        {
             //Create a temp Datatable for testing.
             var temp = new DataTable("Temp");
             temp.Columns.Add(new DataColumn("TempColumn", typeof(int)));
@@ -135,6 +144,54 @@ namespace SimpleDataSet
             //RowState = Deleted
             temp.Rows[0].Delete();
             WriteLine($"After calling Delete: {row.RowState}");
+        }
+
+        static void SaveAndLoadAsBinary(DataSet carsinventoryDS)
+        {
+            //Set binary serialization flag
+            carsinventoryDS.RemotingFormat = SerializationFormat.Binary;
+
+            //Save this dataset as binary
+            var fs = new FileStream("BinaryCars.bin", FileMode.Create);
+            var bFormat = new BinaryFormatter();
+            bFormat.Serialize(fs, carsinventoryDS);
+            fs.Close();
+
+            //Clear out dataset
+            carsinventoryDS.Clear();
+
+            //Load DataSet from binary file
+            fs = new FileStream("BinaryCars.bin", FileMode.Open);
+            var data = (DataSet)bFormat.Deserialize(fs);
+        }
+        static void SaveAndLoadAsXml(DataSet carsInventoryDS)
+        {
+            //Savethis DataSet a s XML
+            carsInventoryDS.WriteXml("carsDataSet.xml");
+            carsInventoryDS.WriteXmlSchema("carsDataSet.xsd");
+
+            //Clear out DataSet
+            carsInventoryDS.Clear();
+
+            //Load dataSet from xml file
+            carsInventoryDS.ReadXml("carsDataSet.xml");
+        }
+
+        static void PrintTable(DataTable dt)
+        {
+            //Get the datatablereader type
+            DataTableReader dtReader = dt.CreateDataReader();
+
+            //The DataTablereader works just like the datareader
+            while (dtReader.Read())
+            {
+                for (var i = 0; i < dtReader.FieldCount; i++)
+                {
+                    Write($"{dtReader.GetValue(i).ToString().Trim()}\t");
+                }
+                WriteLine();
+            }
+            dtReader.Close();
         }
     }
 }
