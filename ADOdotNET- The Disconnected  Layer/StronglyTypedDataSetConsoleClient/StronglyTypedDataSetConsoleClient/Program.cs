@@ -22,7 +22,7 @@ namespace StronglyTypedDataSetConsoleClient
             //Inform a dapter of the SELECT command text connection
             var adapter = new InventoryTableAdapter();
 
-            
+
             //Fill our dataset with a new table, named inventory
             adapter.Fill(table);
 
@@ -65,7 +65,8 @@ namespace StronglyTypedDataSetConsoleClient
             //}
         }
 
-        public static void AddRecord(AutoLotDataSet.InventoryDataTable table,InventoryTableAdapter adapter) {
+        public static void AddRecord(AutoLotDataSet.InventoryDataTable table, InventoryTableAdapter adapter)
+        {
             try
             {
                 //Get a new strongly typed row from the table.
@@ -80,7 +81,7 @@ namespace StronglyTypedDataSetConsoleClient
                 table.AddInventoryRow(newRow);
 
                 //Add one more row, using overloade add method
-                table.AddInventoryRow("Yugo","Green","Zippy");
+                table.AddInventoryRow("Yugo", "Green", "Zippy");
 
                 //update database
                 adapter.Update(table);
@@ -88,6 +89,38 @@ namespace StronglyTypedDataSetConsoleClient
             catch (Exception ex)
             {
                 WriteLine(ex.Message);
+            }
+        }
+
+        public static void RemoveRecord(AutoLotDataSet.InventoryDataTable table, InventoryTableAdapter adapter)
+        {
+            try
+            {
+                AutoLotDataSet.InventoryRow rowToDelete = table.FindByCarId(1);
+                adapter.Delete(rowToDelete.CarId, rowToDelete.Make, rowToDelete.Color, rowToDelete.PetName);
+                rowToDelete = table.FindByCarId(2);
+                adapter.Delete(rowToDelete.CarId, rowToDelete.Make, rowToDelete.Color, rowToDelete.PetName);
+            }
+            catch (Exception ex)
+            {
+                WriteLine(ex.Message);
+            }
+        }
+
+        public static void CallStoredProc() {
+            try
+            {
+                var queriestableAdapter = new QueriesTableAdapter();
+                Write("Enter ID of car to look up: ");
+                string carID = ReadLine() ?? "0";
+                string carName = "";
+                queriestableAdapter.GetPetName(int.Parse(carID), ref carName);
+                WriteLine($"CarID {carID} has the name of {carName}");
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }
