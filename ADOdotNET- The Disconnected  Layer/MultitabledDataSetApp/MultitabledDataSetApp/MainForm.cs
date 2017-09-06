@@ -39,6 +39,7 @@ namespace MultitabledDataSetApp
             _connectionString = ConfigurationManager.ConnectionStrings["AutoLotSqlProvider"].ConnectionString;
 
             //Create adapters
+            //Provides the query  string and connection string to connect to the database
             _invTableAdapter = new SqlDataAdapter("Select * from Inventory",_connectionString);
             _custTableAdapter = new SqlDataAdapter("Select * from Customers", _connectionString);
             _ordersTableAdapter = new SqlDataAdapter("Select * from Orders", _connectionString);
@@ -48,11 +49,13 @@ namespace MultitabledDataSetApp
             _sqlCbCustomers = new SqlCommandBuilder(_custTableAdapter);
             _sqlCbOrders = new SqlCommandBuilder(_ordersTableAdapter);
 
+            //fills the dataset with the data table gathered from the database
             _invTableAdapter.Fill(_autoLotDs, "Inventory");
             _custTableAdapter.Fill(_autoLotDs, "Customers");
             _ordersTableAdapter.Fill(_autoLotDs,"Orders");
 
             //Build relations between tables.
+            //mapps the foreign keys to each database
             BuildTableRelationship();
 
             //Bind to grids
