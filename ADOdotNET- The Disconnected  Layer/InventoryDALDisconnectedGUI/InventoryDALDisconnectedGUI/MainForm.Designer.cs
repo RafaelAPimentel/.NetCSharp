@@ -1,0 +1,100 @@
+﻿namespace InventoryDALDisconnectedGUI
+{
+    partial class MainForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.inventoryGrid = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnUpdateInventory = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // inventoryGrid
+            // 
+            this.inventoryGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inventoryGrid.Location = new System.Drawing.Point(3, 25);
+            this.inventoryGrid.Name = "inventoryGrid";
+            this.inventoryGrid.Size = new System.Drawing.Size(488, 150);
+            this.inventoryGrid.TabIndex = 1;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(213, 200);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(8, 49);
+            this.dataGridView2.TabIndex = 2;
+            // 
+            // btnUpdateInventory
+            // 
+            this.btnUpdateInventory.Location = new System.Drawing.Point(3, 203);
+            this.btnUpdateInventory.Name = "btnUpdateInventory";
+            this.btnUpdateInventory.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateInventory.TabIndex = 3;
+            this.btnUpdateInventory.Text = "Update";
+            this.btnUpdateInventory.UseVisualStyleBackColor = true;
+            this.btnUpdateInventory.Click += new System.EventHandler(this.btnUpdateInventory_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(503, 261);
+            this.Controls.Add(this.btnUpdateInventory);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.inventoryGrid);
+            this.Controls.Add(this.label1);
+            this.Name = "MainForm";
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView inventoryGrid;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btnUpdateInventory;
+    }
+}
+
