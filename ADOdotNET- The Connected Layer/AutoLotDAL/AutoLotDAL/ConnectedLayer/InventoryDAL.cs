@@ -113,7 +113,7 @@ namespace AutoLotDAL.ConnectedLayer
             //Update the PetName of the car with a specific CarId.
             string sql = $"UPDATE Inventory SET PetName = @petName WHERE CarId = @carId";
             using (SqlCommand command = new SqlCommand(sql, _sqlconnection))
-            {
+            { 
                 try
                 {
                     SqlParameter parameter = new SqlParameter
