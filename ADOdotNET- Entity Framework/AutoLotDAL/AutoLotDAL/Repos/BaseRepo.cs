@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AutoLotDAL.Repos
 {
-    public abstract class BaseRepo<T> : IDisposable where T:class,new()
+    public abstract class BaseRepo<T> :IDisposable where T:class,new()
     {
         public AutoLotEntities Context { get; } = new AutoLotEntities();
         protected DbSet<T> Table;
@@ -102,7 +102,7 @@ namespace AutoLotDAL.Repos
                 //If Entries propery is null, no records were modified
                 //entities in Entries threw error due to timestamp/conncurrency
                 //for now, just rethrow the exception
-                throw;
+                throw ex;
             }
             catch (DbUpdateException ex)
             {
@@ -110,18 +110,18 @@ namespace AutoLotDAL.Repos
                 //Examine the inner exception(s) for additional 
                 //details and affected objects
                 //for now, just rethrow the exception
-                throw;
+                throw ex;
             }
             catch (CommitFailedException ex)
             {
                 //handle transaction failures here
                 //for now, just rethrow the exception
-                throw;
+                throw ex;
             }
             catch (Exception ex)
             {
                 //some other exception happened and should be handled
-                throw;
+                throw ex;
             }
         }
         internal async Task<int> SaveChangesAsync()
@@ -134,7 +134,7 @@ namespace AutoLotDAL.Repos
             {
                 //Thrown when there is a concurrency error
                 //for now, just rethrow the exception
-                throw;
+                throw ex;
             }
             catch (DbUpdateException ex)
             {
@@ -142,18 +142,18 @@ namespace AutoLotDAL.Repos
                 //Examine the inner exception(s) for additional 
                 //details and affected objects
                 //for now, just rethrow the exception
-                throw;
+                throw ex;
             }
             catch (CommitFailedException ex)
             {
                 //handle transaction failures here
                 //for now, just rethrow the exception
-                throw;
+                throw ex;
             }
             catch (Exception ex)
             {
                 //some other exception happened and should be handled
-                throw;
+                throw ex;
             }
         }
 

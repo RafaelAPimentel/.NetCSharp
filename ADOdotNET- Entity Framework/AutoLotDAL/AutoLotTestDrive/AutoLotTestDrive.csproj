@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8F1A378F-2E74-4652-BEB6-9744BE12AA3A}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AutoLotDAL</RootNamespace>
-    <AssemblyName>AutoLotDAL</AssemblyName>
+    <ProjectGuid>{7DB318E5-83F1-4AC6-B36D-BA8B81653F54}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AutoLotTestDrive</RootNamespace>
+    <AssemblyName>AutoLotTestDrive</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,8 +41,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,25 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\AutoLotEntities.cs" />
-    <Compile Include="EF\DataInitializer.cs" />
-    <Compile Include="Models\CreditRisk.cs" />
-    <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Inventory.cs" />
-    <Compile Include="Models\Order.cs" />
-    <Compile Include="Models\Partials\InventoryPartial.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\BaseRepo.cs" />
-    <Compile Include="Repos\CreditRiskRepo.cs" />
-    <Compile Include="Repos\CustomerRepo.cs" />
-    <Compile Include="Repos\InventoryRepo.cs" />
-    <Compile Include="Repos\IRepo.cs" />
-    <Compile Include="Repos\OrderRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AutoLotDAL\AutoLotDAL.csproj">
+      <Project>{8F1A378F-2E74-4652-BEB6-9744BE12AA3A}</Project>
+      <Name>AutoLotDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
