@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutoLotDAL.Models
 {
     public partial class Order
     {
-        [Key,Required,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key, Required, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderId { get; set; }
 
         [Required]
@@ -24,5 +19,8 @@ namespace AutoLotDAL.Models
 
         [ForeignKey("CarId")]
         public virtual Inventory Car { get; set; }
+
+        [Timestamp]
+        public byte[] TimeStamp { get; set; }
     }
 }

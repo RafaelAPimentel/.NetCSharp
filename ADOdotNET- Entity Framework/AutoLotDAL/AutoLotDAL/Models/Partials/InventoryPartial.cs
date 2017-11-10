@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AutoLotDAL.Models
 {
@@ -14,7 +9,7 @@ namespace AutoLotDAL.Models
             //Since the PetName column could be empty, supply
             //the default name of  **No Name**.
 
-            return $"{this.PetName ?? "**No Name**"} is a {this.Color} {this.Make} with ID {this.CarId}."; 
+            return $"{this.PetName ?? "**No Name**"} is a {this.Color} {this.Make} with ID {this.CarId}.";
         }
 
         [NotMapped]

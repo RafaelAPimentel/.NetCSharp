@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AutoLotDAL.Models
 {
@@ -22,6 +18,9 @@ namespace AutoLotDAL.Models
 
         [StringLength(50)]
         public string PetName { get; set; }
+
+        [Timestamp]
+        public byte[] TimeStamp { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; } = new HashSet<Order>();
     }
