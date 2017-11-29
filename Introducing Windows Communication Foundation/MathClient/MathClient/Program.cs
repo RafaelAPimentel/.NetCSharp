@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.Remoting.Services;
 using System.Threading;
 using MathClient.ServiceReference1;
 
@@ -7,6 +6,11 @@ namespace MathClient
 {
     public static class Program
     {
+        //you will have to create the MathServiceLibrary because I removed it.
+        //use installutil MathWinServiceHost.exe to install 
+        //in the MathWinService debug directory
+        //uninstall using installutil /u MathWinServiceHost.exe 
+        //in same directory
         private static void Main()
         {
             Console.WriteLine("**** The Async Math Client ****");
