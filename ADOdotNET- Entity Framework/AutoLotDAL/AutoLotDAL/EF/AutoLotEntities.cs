@@ -1,6 +1,7 @@
 namespace AutoLotDAL.EF
 {
     using AutoLotDAL.Models;
+    using System.Web;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure.Interception;
 
@@ -12,7 +13,7 @@ namespace AutoLotDAL.EF
         // 
         // If you wish to target a different database and/or database provider, modify the 'AutoLotEntities' 
         // connection string in the application configuration file.
-        static readonly DatabaseLogger DatabaseLogger = new DatabaseLogger("sqllog.txt", true);
+        static readonly DatabaseLogger DatabaseLogger = new DatabaseLogger($"{HttpRuntime.AppDomainAppPath}/sqllog.txt", true);
         public AutoLotEntities()
             : base("name=AutoLotConnection")
         {
