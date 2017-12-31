@@ -1,6 +1,6 @@
 namespace AutoLotDAL.EF
 {
-    using AutoLotDAL.Models;
+    using Models;
     using System.Web;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure.Interception;
