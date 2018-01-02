@@ -192,3 +192,1044 @@ SELECT
 -- Completed in 0 ms with result: SqlDataReader
 
 Closed connection at 12/31/2017 2:52:19 AM -05:00
+Opened connection at 1/1/2018 8:20:23 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:20:23 PM -05:00
+-- Completed in 83 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:20:23 PM -05:00
+Opened connection at 1/1/2018 8:20:24 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:20:24 PM -05:00
+-- Completed in 206 ms with result: 1
+
+Closed connection at 1/1/2018 8:20:24 PM -05:00
+Opened connection at 1/1/2018 8:20:24 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:20:24 PM -05:00
+-- Completed in 103 ms with result: 1
+
+Closed connection at 1/1/2018 8:20:24 PM -05:00
+Opened connection at 1/1/2018 8:20:25 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:20:26 PM -05:00
+-- Failed in 223 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:20:26 PM -05:00
+Opened connection at 1/1/2018 8:20:26 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:20:26 PM -05:00
+-- Failed in 23 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:20:26 PM -05:00
+Opened connection at 1/1/2018 8:20:26 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:20:26 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:20:26 PM -05:00
+Opened connection at 1/1/2018 8:20:26 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:20:26 PM -05:00
+-- Failed in 1 ms with error: Invalid column name 'CarId'.
+
+Closed connection at 1/1/2018 8:20:26 PM -05:00
+Opened connection at 1/1/2018 8:28:51 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:28:51 PM -05:00
+-- Completed in 47 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:28:51 PM -05:00
+Opened connection at 1/1/2018 8:28:52 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:28:52 PM -05:00
+-- Completed in 3 ms with result: 1
+
+Closed connection at 1/1/2018 8:28:52 PM -05:00
+Opened connection at 1/1/2018 8:28:52 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:28:52 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 8:28:52 PM -05:00
+Opened connection at 1/1/2018 8:28:53 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:28:54 PM -05:00
+-- Failed in 44 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:28:54 PM -05:00
+Opened connection at 1/1/2018 8:28:54 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:28:54 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:28:54 PM -05:00
+Opened connection at 1/1/2018 8:28:54 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:28:54 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:28:54 PM -05:00
+Opened connection at 1/1/2018 8:28:54 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:28:54 PM -05:00
+-- Completed in 1 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:28:54 PM -05:00
+Opened connection at 1/1/2018 8:29:34 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:29:34 PM -05:00
+-- Completed in 33 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:29:34 PM -05:00
+Opened connection at 1/1/2018 8:29:35 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:29:35 PM -05:00
+-- Completed in 5 ms with result: 1
+
+Closed connection at 1/1/2018 8:29:35 PM -05:00
+Opened connection at 1/1/2018 8:29:35 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:29:35 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 8:29:35 PM -05:00
+Opened connection at 1/1/2018 8:29:35 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:29:37 PM -05:00
+-- Failed in 35 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:29:37 PM -05:00
+Opened connection at 1/1/2018 8:29:37 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:29:37 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:29:37 PM -05:00
+Opened connection at 1/1/2018 8:29:37 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:29:37 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:29:37 PM -05:00
+Opened connection at 1/1/2018 8:29:37 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:29:37 PM -05:00
+-- Completed in 0 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:29:37 PM -05:00
+Opened connection at 1/1/2018 8:30:49 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:30:49 PM -05:00
+-- Completed in 31 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:30:49 PM -05:00
+Opened connection at 1/1/2018 8:30:50 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:30:50 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 8:30:50 PM -05:00
+Opened connection at 1/1/2018 8:30:50 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:30:50 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 8:30:50 PM -05:00
+Opened connection at 1/1/2018 8:30:50 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:30:51 PM -05:00
+-- Failed in 30 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:30:51 PM -05:00
+Opened connection at 1/1/2018 8:30:51 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:30:51 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:30:51 PM -05:00
+Opened connection at 1/1/2018 8:30:51 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:30:51 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:30:51 PM -05:00
+Opened connection at 1/1/2018 8:30:51 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:30:51 PM -05:00
+-- Completed in 0 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:30:51 PM -05:00
+Opened connection at 1/1/2018 8:47:03 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:47:03 PM -05:00
+-- Completed in 32 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:47:03 PM -05:00
+Opened connection at 1/1/2018 8:47:04 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:47:04 PM -05:00
+-- Completed in 56 ms with result: 1
+
+Closed connection at 1/1/2018 8:47:04 PM -05:00
+Opened connection at 1/1/2018 8:47:04 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:47:04 PM -05:00
+-- Completed in 19 ms with result: 1
+
+Closed connection at 1/1/2018 8:47:04 PM -05:00
+Opened connection at 1/1/2018 8:47:04 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:47:06 PM -05:00
+-- Failed in 41 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:47:06 PM -05:00
+Opened connection at 1/1/2018 8:47:06 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:47:06 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:47:06 PM -05:00
+Opened connection at 1/1/2018 8:47:06 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:47:06 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:47:06 PM -05:00
+Opened connection at 1/1/2018 8:47:06 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:47:06 PM -05:00
+-- Completed in 9 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:47:06 PM -05:00
+Opened connection at 1/1/2018 8:54:48 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:54:48 PM -05:00
+-- Completed in 43 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:54:48 PM -05:00
+Opened connection at 1/1/2018 8:54:49 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:54:49 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 8:54:49 PM -05:00
+Opened connection at 1/1/2018 8:54:49 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:54:49 PM -05:00
+-- Completed in 5 ms with result: 1
+
+Closed connection at 1/1/2018 8:54:49 PM -05:00
+Opened connection at 1/1/2018 8:54:49 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:54:50 PM -05:00
+-- Failed in 43 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:54:50 PM -05:00
+Opened connection at 1/1/2018 8:54:50 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:54:50 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:54:50 PM -05:00
+Opened connection at 1/1/2018 8:54:51 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:54:51 PM -05:00
+-- Failed in 3 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:54:51 PM -05:00
+Opened connection at 1/1/2018 8:54:51 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:54:51 PM -05:00
+-- Completed in 0 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:54:51 PM -05:00
+Opened connection at 1/1/2018 8:59:17 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 8:59:17 PM -05:00
+-- Completed in 35 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 8:59:17 PM -05:00
+Opened connection at 1/1/2018 8:59:17 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 8:59:17 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 8:59:17 PM -05:00
+Opened connection at 1/1/2018 8:59:17 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 8:59:17 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 8:59:17 PM -05:00
+Opened connection at 1/1/2018 8:59:18 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 8:59:19 PM -05:00
+-- Failed in 28 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:59:19 PM -05:00
+Opened connection at 1/1/2018 8:59:19 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 8:59:19 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 8:59:19 PM -05:00
+Opened connection at 1/1/2018 8:59:19 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 8:59:19 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 8:59:19 PM -05:00
+Opened connection at 1/1/2018 8:59:19 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 8:59:19 PM -05:00
+-- Completed in 0 ms with result: SqlDataReader
+
+Opened connection at 1/1/2018 9:01:56 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:01:56 PM -05:00
+-- Completed in 51 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:01:56 PM -05:00
+Opened connection at 1/1/2018 9:01:57 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:01:57 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 9:01:57 PM -05:00
+Opened connection at 1/1/2018 9:01:57 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:01:57 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 9:01:57 PM -05:00
+Opened connection at 1/1/2018 9:01:58 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:01:59 PM -05:00
+-- Failed in 29 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:01:59 PM -05:00
+Opened connection at 1/1/2018 9:01:59 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:01:59 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:01:59 PM -05:00
+Opened connection at 1/1/2018 9:01:59 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:01:59 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:01:59 PM -05:00
+Opened connection at 1/1/2018 9:01:59 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:01:59 PM -05:00
+-- Completed in 44 ms with result: SqlDataReader
+
+Opened connection at 1/1/2018 9:03:34 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:03:34 PM -05:00
+-- Completed in 32 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:03:35 PM -05:00
+Opened connection at 1/1/2018 9:03:35 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:03:35 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 9:03:35 PM -05:00
+Opened connection at 1/1/2018 9:03:35 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:03:35 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 9:03:35 PM -05:00
+Opened connection at 1/1/2018 9:03:36 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:03:36 PM -05:00
+-- Failed in 32 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:03:36 PM -05:00
+Opened connection at 1/1/2018 9:03:36 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:03:36 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:03:36 PM -05:00
+Opened connection at 1/1/2018 9:03:36 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:03:37 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:03:37 PM -05:00
+Opened connection at 1/1/2018 9:03:37 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:03:37 PM -05:00
+-- Completed in 0 ms with result: SqlDataReader
+
+Opened connection at 1/1/2018 9:08:52 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:08:52 PM -05:00
+-- Completed in 37 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:08:52 PM -05:00
+Opened connection at 1/1/2018 9:09:30 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:09:30 PM -05:00
+-- Completed in 35 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:09:30 PM -05:00
+Opened connection at 1/1/2018 9:15:59 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:15:59 PM -05:00
+-- Completed in 31 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:15:59 PM -05:00
+Opened connection at 1/1/2018 9:19:14 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:19:14 PM -05:00
+-- Completed in 32 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:19:14 PM -05:00
+Opened connection at 1/1/2018 9:23:35 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:23:35 PM -05:00
+-- Completed in 31 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:23:35 PM -05:00
+Opened connection at 1/1/2018 9:23:36 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:23:36 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 9:23:36 PM -05:00
+Opened connection at 1/1/2018 9:23:36 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:23:36 PM -05:00
+-- Completed in 5 ms with result: 1
+
+Closed connection at 1/1/2018 9:23:36 PM -05:00
+Opened connection at 1/1/2018 9:23:36 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:23:37 PM -05:00
+-- Failed in 41 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:23:37 PM -05:00
+Opened connection at 1/1/2018 9:23:37 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:23:37 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:23:37 PM -05:00
+Opened connection at 1/1/2018 9:23:37 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:23:37 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:23:37 PM -05:00
+Opened connection at 1/1/2018 9:23:37 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:23:38 PM -05:00
+-- Failed in 2 ms with error: Invalid column name 'TimeStamp'.
+
+Closed connection at 1/1/2018 9:23:38 PM -05:00
+Opened connection at 1/1/2018 9:25:09 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:25:09 PM -05:00
+-- Completed in 39 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:25:10 PM -05:00
+Opened connection at 1/1/2018 9:25:10 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:25:10 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 9:25:10 PM -05:00
+Opened connection at 1/1/2018 9:25:10 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:25:10 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 9:25:10 PM -05:00
+Opened connection at 1/1/2018 9:25:11 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:25:11 PM -05:00
+-- Failed in 28 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:25:11 PM -05:00
+Opened connection at 1/1/2018 9:25:11 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:25:11 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:25:11 PM -05:00
+Opened connection at 1/1/2018 9:25:12 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:25:12 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:25:12 PM -05:00
+Opened connection at 1/1/2018 9:25:12 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:25:12 PM -05:00
+-- Failed in 1 ms with error: Invalid column name 'TimeStamp'.
+
+Closed connection at 1/1/2018 9:25:12 PM -05:00
+Opened connection at 1/1/2018 9:28:48 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:28:48 PM -05:00
+-- Completed in 34 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:28:48 PM -05:00
+Opened connection at 1/1/2018 9:28:49 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:28:49 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 9:28:49 PM -05:00
+Opened connection at 1/1/2018 9:28:49 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:28:49 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 9:28:49 PM -05:00
+Opened connection at 1/1/2018 9:28:49 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:28:50 PM -05:00
+-- Failed in 35 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:28:50 PM -05:00
+Opened connection at 1/1/2018 9:28:50 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:28:50 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:28:50 PM -05:00
+Opened connection at 1/1/2018 9:28:50 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:28:50 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:28:50 PM -05:00
+Opened connection at 1/1/2018 9:28:50 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:28:50 PM -05:00
+-- Failed in 1 ms with error: Invalid column name 'TimeStamp'.
+
+Closed connection at 1/1/2018 9:28:50 PM -05:00
+Opened connection at 1/1/2018 9:29:16 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:29:16 PM -05:00
+-- Completed in 33 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:29:16 PM -05:00
+Opened connection at 1/1/2018 9:29:16 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:29:16 PM -05:00
+-- Completed in 2 ms with result: 1
+
+Closed connection at 1/1/2018 9:29:16 PM -05:00
+Opened connection at 1/1/2018 9:29:16 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:29:16 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 9:29:16 PM -05:00
+Opened connection at 1/1/2018 9:29:17 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:29:18 PM -05:00
+-- Failed in 29 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:29:18 PM -05:00
+Opened connection at 1/1/2018 9:29:18 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:29:18 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:29:18 PM -05:00
+Opened connection at 1/1/2018 9:29:18 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:29:18 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:29:18 PM -05:00
+Opened connection at 1/1/2018 9:29:18 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:29:18 PM -05:00
+-- Completed in 1 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:29:18 PM -05:00
+Opened connection at 1/1/2018 9:35:13 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:35:13 PM -05:00
+-- Completed in 35 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:35:13 PM -05:00
+Opened connection at 1/1/2018 9:35:14 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:35:14 PM -05:00
+-- Completed in 37 ms with result: 1
+
+Closed connection at 1/1/2018 9:35:14 PM -05:00
+Opened connection at 1/1/2018 9:35:14 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:35:14 PM -05:00
+-- Completed in 18 ms with result: 1
+
+Closed connection at 1/1/2018 9:35:14 PM -05:00
+Opened connection at 1/1/2018 9:35:14 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:35:15 PM -05:00
+-- Failed in 39 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:35:15 PM -05:00
+Opened connection at 1/1/2018 9:35:15 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:35:15 PM -05:00
+-- Failed in 2 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:35:15 PM -05:00
+Opened connection at 1/1/2018 9:35:16 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:35:16 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:35:16 PM -05:00
+Opened connection at 1/1/2018 9:35:16 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:35:16 PM -05:00
+-- Completed in 1 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:36:00 PM -05:00
+Opened connection at 1/1/2018 9:42:44 PM -05:00
+select cast(serverproperty('EngineEdition') as int)
+-- Executing at 1/1/2018 9:42:44 PM -05:00
+-- Completed in 32 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:42:44 PM -05:00
+Opened connection at 1/1/2018 9:42:45 PM -05:00
+IF db_id(N'AutoLot') IS NOT NULL SELECT 1 ELSE SELECT Count(*) FROM sys.databases WHERE [name]=N'AutoLot'
+-- Executing at 1/1/2018 9:42:45 PM -05:00
+-- Completed in 3 ms with result: 1
+
+Closed connection at 1/1/2018 9:42:45 PM -05:00
+Opened connection at 1/1/2018 9:42:45 PM -05:00
+
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.CreditRisks','dbo.Customers','dbo.Orders','dbo.Inventory')
+    OR t.TABLE_NAME = 'EdmMetadata'
+-- Executing at 1/1/2018 9:42:45 PM -05:00
+-- Completed in 4 ms with result: 1
+
+Closed connection at 1/1/2018 9:42:45 PM -05:00
+Opened connection at 1/1/2018 9:42:45 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+-- p__linq__0: 'AutoLotDAL.EF.AutoLotEntities' (Type = String, Size = 4000)
+-- Executing at 1/1/2018 9:42:46 PM -05:00
+-- Failed in 28 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:42:46 PM -05:00
+Opened connection at 1/1/2018 9:42:46 PM -05:00
+SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+    )  AS [GroupBy1]
+-- Executing at 1/1/2018 9:42:46 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.__MigrationHistory'.
+
+Closed connection at 1/1/2018 9:42:46 PM -05:00
+Opened connection at 1/1/2018 9:42:46 PM -05:00
+SELECT TOP (1) 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ModelHash] AS [ModelHash]
+    FROM [dbo].[EdmMetadata] AS [Extent1]
+    ORDER BY [Extent1].[Id] DESC
+-- Executing at 1/1/2018 9:42:46 PM -05:00
+-- Failed in 1 ms with error: Invalid object name 'dbo.EdmMetadata'.
+
+Closed connection at 1/1/2018 9:42:46 PM -05:00
+Opened connection at 1/1/2018 9:42:46 PM -05:00
+SELECT 
+    [Extent1].[CarId] AS [CarId], 
+    [Extent1].[Make] AS [Make], 
+    [Extent1].[Color] AS [Color], 
+    [Extent1].[PetName] AS [PetName], 
+    [Extent1].[TimeStamp] AS [TimeStamp]
+    FROM [dbo].[Inventory] AS [Extent1]
+-- Executing at 1/1/2018 9:42:47 PM -05:00
+-- Completed in 0 ms with result: SqlDataReader
+
+Closed connection at 1/1/2018 9:42:47 PM -05:00

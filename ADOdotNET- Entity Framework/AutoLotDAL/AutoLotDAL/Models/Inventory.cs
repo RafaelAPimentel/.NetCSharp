@@ -10,7 +10,7 @@ namespace AutoLotDAL.Models
         [Key]
         public int CarId { get; set; }
 
-        [StringLength(50)]
+        [StringLength(50),]
         public string Make { get; set; }
 
         [StringLength(50)]
@@ -18,7 +18,7 @@ namespace AutoLotDAL.Models
 
         [StringLength(50)]
         public string PetName { get; set; }
-
+        
         [Timestamp]
         public byte[] TimeStamp { get; set; }
 
