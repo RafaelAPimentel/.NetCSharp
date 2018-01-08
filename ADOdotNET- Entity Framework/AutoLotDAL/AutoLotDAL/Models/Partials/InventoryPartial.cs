@@ -11,8 +11,5 @@ namespace AutoLotDAL.Models
 
             return $"{this.PetName ?? "**No Name**"} is a {this.Color} {this.Make} with ID {this.CarId}.";
         }
-
-        [NotMapped]
-        public string MakeColor => $"{Make} + ({Color})";
     }
 }
