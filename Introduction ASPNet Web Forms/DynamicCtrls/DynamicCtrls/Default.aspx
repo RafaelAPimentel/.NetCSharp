@@ -11,18 +11,24 @@
         <div>
             <hr />
             <h1>Dynamic Controls</h1>
-            <asp:Label ID="lblTextBoxText" runat="server" Text="Label"></asp:Label>
+            <asp:Panel ID="MyPanel" runat="server" width="506px"
+                BorderColor="Black" BorderStyle="Solid" Height="182px">
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:Button ID="MoveNameToLabel" runat="server" OnClick="btnMoveNameToLabel_Click" Text="Button" />
+                <br />
+                <asp:Label ID="lblTextBoxText" runat="server" Text="Label"></asp:Label>
+            </asp:Panel>
         </div>
         <!--THE PANEL HAS THREE CONTAINED CONTOLS-->
-            <asp:Panel ID="MyPanel" runat="server" width="200px"
-                BorderColor="Black" BorderStyle="Solid">
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                <asp:Button ID="Button1" runat="server" Text="Button" /><br />
-                <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
-            </asp:Panel>
-        <br />
-        <br />
+        <asp:Button ID="btnAddWidget" runat="server" Text="Add Widget" OnClick="btnAddWidget_Click" />
+        <asp:Button ID="btnClearPanel" runat="server" Text="Clear Planel" OnClick="btnClearPanel_Click" />
+        <asp:Button ID="btnGetTextData" runat="server" Text="Get Data" OnClick="btnGetTextData_Click"/><br />
         <asp:Label ID="lblControlInfo" runat="server"></asp:Label>
+        <asp:Label ID="lblTextBoxData" runat="server"></asp:Label>
+        <br />
+        <br />
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
