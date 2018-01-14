@@ -12,15 +12,15 @@ namespace AutoLotDAL.Repos
         {
             Table = Context.Customer;
         }
-        public int Delete(int id, byte[] timestamp)
+        public int Delete(int id)
         {
-            Context.Entry(new Customer() { CustId = id, TimeStamp = timestamp }).State = EntityState.Deleted;
+            Context.Entry(new Customer() { CustId = id}).State = EntityState.Deleted;
             return SaveChanges();
         }
 
-        public Task<int> DeleteAsync(int id, byte[] timestamp)
+        public Task<int> DeleteAsync(int id)
         {
-            Context.Entry(new Customer() { CustId = id, TimeStamp = timestamp }).State = EntityState.Deleted;
+            Context.Entry(new Customer() { CustId = id }).State = EntityState.Deleted;
             return SaveChangesAsync();
         }
 

@@ -19,8 +19,5 @@ namespace AutoLotDAL.Models
 
         [ForeignKey("CarId")]
         public virtual Inventory Car { get; set; }
-
-        [Timestamp]
-        public byte[] TimeStamp { get; set; }
     }
 }

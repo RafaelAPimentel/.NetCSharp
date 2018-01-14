@@ -12,8 +12,8 @@ namespace AutoLotDAL.Repos
         Task<int> AddRangeAsync(IList<T> entities);
         int Save(T entities);
         Task<int> SaveAsync(T entities);
-        int Delete(int id, byte[] timestamp);
-        Task<int> DeleteAsync(int id, byte[] tmestamp);
+        int Delete(int id);
+        Task<int> DeleteAsync(int id);
         int Delete(T entities);
         Task<int> DeleteAsync(T entities);
         T GetOne(int? id);
