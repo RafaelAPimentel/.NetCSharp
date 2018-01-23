@@ -3,7 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="GridView1" runat="server" CellPadding="3" AutoGenerateColumns="False" ItemType="AutoLotDAL.Models.Inventory" SelectMethod="GetData" EmptyDataText="There are no data records to display" GridLines="None" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellSpacing="1" Width="323px" DataKeyNames="CarId" DeleteMethod="Delete" UpdateMethod="Update" AllowPaging="True" AllowSorting="True" PageSize="5">
+    <asp:DropDownList ID="cboMake" runat="server" AppendDataBoundItems="True" AutoPostBack="True" DataTextField="Make" DataValueField="Make" SelectMethod="GetMake"><asp:ListItem Value="" Text="(All)" />
+    </asp:DropDownList>
+    <asp:GridView ID="GridView1" runat="server" CellPadding="3" AutoGenerateColumns="False" ItemType="AutoLotDAL.Models.Inventory" SelectMethod="GetData" EmptyDataText="There are no data records to display" GridLines="None" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellSpacing="1" Width="400px" DataKeyNames="CarId" DeleteMethod="Delete" UpdateMethod="Update" AllowPaging="True" AllowSorting="True" PageSize="8">
         <Columns>
             <asp:BoundField DataField="CarID" HeaderText="CarID" ReadOnly="true" SortExpression="CarID" />
             <asp:BoundField DataField="Make" HeaderText="Make" SortExpression="Make" />

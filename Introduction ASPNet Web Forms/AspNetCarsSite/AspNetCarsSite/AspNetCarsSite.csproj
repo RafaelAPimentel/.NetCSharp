@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
+    <Content Include="BuildCar.aspx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -112,6 +113,13 @@
     </Compile>
     <Compile Include="Inventory.aspx.designer.cs">
       <DependentUpon>Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuildCar.aspx.cs">
+      <DependentUpon>BuildCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuildCar.aspx.designer.cs">
+      <DependentUpon>BuildCar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

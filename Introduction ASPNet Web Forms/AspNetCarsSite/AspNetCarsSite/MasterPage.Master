@@ -13,7 +13,7 @@
         <div>
             <hr />
             <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="Welcome to the ASP.NET Cars SuperSite!"></asp:Label><br/>
-            <asp:AdRotator ID="myAdRotater" runat="server" AdvertismentFile ="Ads.xml" DataSourceID="Ads" />
+            <asp:AdRotator ID="myAdRotater" runat="server" AdvertisementFile="~/Ads.xml" />
             <asp:XmlDataSource ID="Ads" runat="server" DataFile="~/Ads.xml" ></asp:XmlDataSource>
             &nbsp;<br/><br/>
                 <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="Arrows">

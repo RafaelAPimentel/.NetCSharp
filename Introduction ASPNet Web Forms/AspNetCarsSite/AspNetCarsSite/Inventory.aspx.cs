@@ -1,7 +1,9 @@
 ﻿using AutoLotDAL.Models;
 using AutoLotDAL.Repos;
 using System;
+using System.Collections;
 using System.Linq;
+using System.Web.ModelBinding;
 
 namespace AspNetCarsSite
 {
@@ -24,6 +26,10 @@ namespace AspNetCarsSite
             }
         }
 
-        public IQueryable<Inventory> GetData() => new InventoryRepo().GetAll().AsQueryable();
+        public IQueryable<Inventory> GetData([Control("cboMake")] string make = "") {
+            return string.IsNullOrEmpty(make) ? new InventoryRepo().GetAll().AsQueryable() : new InventoryRepo().GetAll().Where(x => x.Make == make).AsQueryable();
+        }
+
+        public IEnumerable GetMake() => new InventoryRepo().GetAll().Select(x => new { x.Make }).Distinct();
     }
 }
