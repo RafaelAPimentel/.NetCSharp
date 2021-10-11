@@ -9,8 +9,6 @@ namespace EmployeeApp
 {
     partial class Employee
     {
-        
-        
         public string Name
         {
             //Properties
@@ -52,8 +50,6 @@ namespace EmployeeApp
         {
             get { return empSNN; }
         }
-
-        
 
         //Methods
         public void giveBonus(float amount)

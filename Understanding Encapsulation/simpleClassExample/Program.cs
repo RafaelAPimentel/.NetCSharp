@@ -30,7 +30,6 @@ namespace simpleClassExample
             Console.WriteLine($"rider name id {c.driverName}");
             Console.WriteLine("============");
             MakeSomeBikes();
-            Console.ReadLine();
         }
         public static void MakeSomeBikes()
         {

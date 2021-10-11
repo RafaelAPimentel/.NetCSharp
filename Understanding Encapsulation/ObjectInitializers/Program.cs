@@ -30,11 +30,9 @@ namespace ObjectInitializers
             Rectangle rect = new Rectangle
             {
                 topLeft = new Point { X = 10, Y = 10 },
-            rightBottom = new Point { X = 200, Y = 200 }
-        };
-        Console.ReadKey();
-
-
+                rightBottom = new Point { X = 200, Y = 200 }
+            };
+            Console.ReadKey();
         }
-}
+    }
 }
